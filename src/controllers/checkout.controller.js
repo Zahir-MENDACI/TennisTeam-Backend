@@ -1,11 +1,6 @@
 const stripe = require('stripe')('sk_test_51IiRkbDDFfj3QhqsDSeogK7yWzHdGryV6wAyUxPddbw2Bvx191Tn2BZvJNfCbWEwNT76ESUbtiL332Of4nM2dHXv00qfjkWH5O');
 const subscriptionModel = require('../models/subscription.model');
 
-import {create} from './subscriptions.controller'
-
-
-
-
 exports.create = (req, res) => {
   const subscription = new subscriptionModel({
     username: req.body.username,
